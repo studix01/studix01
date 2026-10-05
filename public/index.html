@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studix01.net | Learn Smarter</title>
+  <meta
+    name="description"
+    content="Studix01.net is a free learning platform for students with notes, quizzes, subjects and AI-powered learning tools."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo">Studix01.net</a>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#subjects">Subjects</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#ai">AI Tutor</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-container">
+        <div>
+          <span class="badge">FREE LEARNING PLATFORM</span>
+          <h1>Learn smarter.<br><span>Grow faster.</span></h1>
+          <p class="hero-text">
+            Studix01.net helps students learn with simple explanations,
+            revision resources, quizzes and modern learning tools.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#subjects" class="btn btn-primary">Start Learning</a>
+            <a href="#ai" class="btn btn-outline">Ask AI Tutor</a>
+          </div>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-icon">✦</div>
+          <h2>Studix01.net AI Tutor</h2>
+          <p>Ask questions about your school subjects and learn step by step.</p>
+
+          <div class="ai-topics">
+            <span>Mathematics</span>
+            <span>Physics</span>
+            <span>Biology</span>
+            <span>English</span>
+            <span>ICT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="subjects">
+      <span class="section-label">LEARNING</span>
+      <h2>Explore Subjects</h2>
+      <p class="section-intro">
+        Choose a subject and start revising. You can add your own books, notes and exercises later.
+      </p>
+
+      <div class="subjects-grid">
+        <article class="subject-card">
+          <div class="subject-icon">📐</div>
+          <h3>Mathematics</h3>
+          <p>Algebra, geometry, numbers and problem solving.</p>
+          <a href="#quiz">Practice →</a>
+        </article>
+
+        <article class="subject-card">
+          <div class="subject-icon">⚡</div>
+          <h3>Physics</h3>
+          <p>Concepts, formulas and numerical problems.</p>
+          <a href="#ai">Ask AI →</a>
+        </article>
+
+        <article class="subject-card">
+          <div class="subject-icon">🧬</div>
+          <h3>Biology</h3>
+          <p>Living organisms, cells and biological systems.</p>
+          <a href="#ai">Learn →</a>
+        </article>
+
+        <article class="subject-card">
+          <div class="subject-icon">🌍</div>
+          <h3>Geography</h3>
+          <p>Maps, environment, population and places.</p>
+          <a href="#quiz">Practice →</a>
+        </article>
+
+        <article class="subject-card">
+          <div class="subject-icon">📖</div>
+          <h3>English</h3>
+          <p>Grammar, vocabulary, reading and writing.</p>
+          <a href="#ai">Learn →</a>
+        </article>
+
+        <article class="subject-card">
+          <div class="subject-icon">💻</div>
+          <h3>ICT</h3>
+          <p>Computers, programming and digital skills.</p>
+          <a href="#ai">Explore →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="soft-section" id="quiz">
+      <div class="soft-inner">
+        <span class="section-label">PRACTICE</span>
+        <h2>Quick Quiz</h2>
+
+        <div class="quiz-box">
+          <p class="quiz-question">What is 12 × 5?</p>
+
+          <div class="answers">
+            <button class="answer" onclick="checkAnswer(this, false)">A. 50</button>
+            <button class="answer" onclick="checkAnswer(this, true)">B. 60</button>
+            <button class="answer" onclick="checkAnswer(this, false)">C. 70</button>
+          </div>
+
+          <p id="quiz-result"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ai-section" id="ai">
+      <span class="section-label">AI TUTOR</span>
+      <h2>Ask Studix01.net AI</h2>
+      <p class="section-intro">
+        Ask a learning question and your AI tutor can help explain it.
+      </p>
+
+      <div class="ai-box">
+        <div class="messages" id="messages">
+          <div class="message ai">
+            Hello! I'm the Studix01.net AI Tutor. Ask me a school question.
+          </div>
+        </div>
+
+        <form class="ai-form" id="aiForm">
+          <textarea
+            id="question"
+            rows="3"
+            placeholder="Example: Explain photosynthesis simply..."
+            required
+          ></textarea>
+          <button class="btn btn-primary" type="submit">Ask AI</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="about-content">
+        <span class="section-label">ABOUT STUDIX01.NET</span>
+        <h2>Built for students.</h2>
+
+        <p>
+          Studix01.net is a learning platform designed to make revision easier, clearer and more accessible.
+        </p>
+
+        <p>
+          The platform can grow to include books, exercises, quizzes, learning videos, student accounts and AI-powered study tools.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © <span id="year"></span> <strong>Studix01.net</strong>. Learn • Practice • Grow.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,16 +1,16 @@
-## Hi there 👋
+# Studix01.net
 
-<!--
-**studix01/studix01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is the website project for the learning platform **Studix01.net**.
 
-Here are some ideas to get you started:
+## Run locally
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```bash
+npm install
+node server.js
+```
+
+Then open: http://localhost:3000
+
+## Production
+
+To make the site live, connect this repository to a hosting platform like Vercel or Netlify and point the domain to `studix01.net`.

@@ -1,0 +1,12 @@
+{
+  "name": "studix01",
+  "version": "1.0.0",
+  "description": "Studix01.net learning platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
