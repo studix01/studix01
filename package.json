@@ -1,12 +1,19 @@
 {
   "name": "studix01",
   "version": "1.0.0",
-  "description": "Studix01.net learning platform",
+  "description": "Studix01.net - Free online learning platform for students",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
+  "keywords": ["learning", "education", "students", "quizzes", "ai-tutor"],
+  "author": "Studix01",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
